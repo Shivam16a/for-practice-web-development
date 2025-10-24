@@ -1,0 +1,180 @@
+.background{
+    background: rgba(0, 0, 0, 0.5);
+    border-bottom: 2px solid #ccc ;
+}
+
+.back{
+    background: url(../bootstrap/a2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.front{
+    height: 952px;
+    background: rgba(0, 0, 0, 0.5);
+}
+#underline{
+    width: 10%;
+    height: 5px;
+    background: #ea7c00;
+}
+
+.title h2::after{
+    content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ea7c00;
+  margin: 4px 10px;
+}
+.cardnumber::after{
+    content: "";
+  width: 120px;
+  height: 1px;
+  display: inline-block;
+  background: #ea7c00;
+  margin: 4px 10px;
+}
+.cardnumber{
+    color: #ea7c00;
+}
+.image img{
+    border-radius: 20px;
+}
+
+.image .d-flex{
+    border-radius:15px 0px 0px 15px;
+    top: 2%;
+    right: -10%;
+    border-color: #ea7c00 !important;
+    color: white;
+    background: #ea7c00;
+}
+.icon i{
+    color: #ea7c00;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.abtimg{
+    width: 100%;
+    height: 90vh;
+}
+
+/* service */
+
+#service{
+    height: 100vh;
+}
+.text-warning{
+    background: rgba(152, 150, 148, 0.1);
+}
+.hover-card{
+    border-radius: 15px;
+    border: none;
+}
+.demohover{
+    background-color: transparent;
+}
+.demohover:hover{
+    background: #ea7c00;
+    border-color: #ea7c00 !important;
+}
+.fa-star{
+    background: none;
+    padding-top: 2px;
+}
+
+/* slide cards */
+.carousel-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
+    /* Prevents overlap below */
+}
+
+.carousel-track {
+    display: flex;
+    flex-wrap: nowrap;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+
+.card-wrapper {
+    flex: 0 0 33.3333%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Tablet view: 2 cards per row */
+@media (max-width: 992px) {
+    .card-wrapper {
+        flex: 0 0 50%;
+    }
+}
+
+/* Mobile view: 1 card per row */
+@media (max-width: 576px) {
+    .card-wrapper {
+        flex: 0 0 100%;
+    }
+}
+
+/* Adjust container height dynamically */
+.carousel-container.auto-height {
+    height: auto !important;
+}
+
+.hover-card {
+    transition: background-color 0.3s, color 0.3s;
+    height: 100%;
+    min-height: 340px;
+    border: none;
+    border-radius: 15px;
+}
+
+.hover-card:hover {
+    background-color: #ea7c00;
+    color: white;
+    border-radius: 15px;
+}
+
+.hover-card:hover .card-title,
+.hover-card:hover .card-text,
+.hover-card:hover .cardnumber {
+    color: white;
+}
+
+.hover-card:hover i {
+    color: white !important;
+    border-color: white !important;
+}
+
+/* Carousel Buttons */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+    z-index: 5;
+}
+
+.carousel-controls button {
+    background-color: rgba(234, 124, 0, 0.8);
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: all;
+    transition: background 0.3s;
+}
+
+.carousel-controls button:hover {
+    background-color: #ea7c00;
+}
