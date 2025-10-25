@@ -178,3 +178,11 @@
 .carousel-controls button:hover {
     background-color: #ea7c00;
 }
+
+.servicecard:hover i{
+    color: white;
+    background: #ea7c00;
+}
+.servicecard:hover{
+    box-shadow: 0px 10px 10px #ccc;
+}
