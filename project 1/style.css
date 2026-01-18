@@ -186,3 +186,12 @@
 .servicecard:hover{
     box-shadow: 0px 10px 10px #ccc;
 }
+
+/* portfoliio section */
+.portfoliobtn button{
+    background: none;
+}
+.portfoliobtn button:hover{
+    background: rgb(246, 228, 211) !important;
+}
+
