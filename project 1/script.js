@@ -98,3 +98,20 @@ window.addEventListener('resize', updateCardWidth);
 // Init on load
 updateCardWidth();
 updateContainerHeight();
+
+
+
+document.querySelectorAll('.filter-btn').forEach(button => {
+    button.addEventListener('click', () => {
+        let filter = button.getAttribute('data-filter');
+
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            if (filter === 'all' || item.dataset.category.includes(filter)) {
+                item.style.display = 'block';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    });
+});
+
