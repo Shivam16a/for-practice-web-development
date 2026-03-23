@@ -1,3 +1,5 @@
+//dynamic card
+
 const cardsData = [
   { number: '01', icon: 'fa-shield-alt', title: 'Risk Management Solution' },
   { number: '02', icon: 'fa-chart-line', title: 'Market Expansion Advisor' },
