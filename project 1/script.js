@@ -8,6 +8,7 @@ const cardsData = [
   { number: '05', icon: 'fa-chart-bar', title: 'Financial Strategy Development' }
 ];
 
+//track data 
 const track = document.getElementById('carouselTrack');
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
